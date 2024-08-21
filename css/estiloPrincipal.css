@@ -1,0 +1,77 @@
+
+/* Definindo as cores principais inspiradas em The Legend of Zelda */
+:root {
+    --verde-zelda: #2e8b57; /* Verde escuro, similar ao traje de Link */
+    --dourado-triforce: #daa520; /* Dourado, inspirado na Triforce */
+    --azul-royal: #4169e1; /* Azul royal, como o de Hyrule Castle */
+    --marrom-deku: #8b4513; /* Marrom, para elementos relacionados à natureza */
+}
+
+/* Estilizando o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--marrom-deku); /* Fundo marrom natural */
+    color: #fff; /* Texto em branco */
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho da página */
+header {
+    background-color: var(--verde-zelda); /* Cabeçalho com fundo verde */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo do título principal no cabeçalho */
+header h1 {
+    margin: 0;
+    color: var(--dourado-triforce); /* Título em dourado */
+    font-size: 2.5em;
+}
+
+/* Barra de navegação */
+nav {
+    background-color: var(--azul-royal); /* Fundo azul royal na barra de navegação */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Links da barra de navegação */
+nav a {
+    color: #fff; /* Links em branco */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+
+/* Estilo principal do conteúdo */
+main {
+    padding: 20px;
+}
+
+/* Estilo dos artigos (notícias) */
+article {
+    background-color: var(--verde-zelda); /* Fundo verde dos artigos */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Título dos artigos */
+article h2 {
+    color: var(--dourado-triforce); /* Títulos dos artigos em dourado */
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: var(--azul-royal); /* Fundo azul royal do rodapé */
+    padding: 10px;
+    text-align: center;
+    color: #fff; /* Texto do rodapé em branco */
+}
+
+
+#logo {
+    background: url(../img/hyrule.jpg);
+}
