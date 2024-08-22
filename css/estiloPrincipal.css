@@ -1,77 +1,174 @@
-
 /* Definindo as cores principais inspiradas em The Legend of Zelda */
 :root {
-    --verde-zelda: #2e8b57; /* Verde escuro, similar ao traje de Link */
-    --dourado-triforce: #daa520; /* Dourado, inspirado na Triforce */
-    --azul-royal: #4169e1; /* Azul royal, como o de Hyrule Castle */
-    --marrom-deku: #8b4513; /* Marrom, para elementos relacionados à natureza */
+  --verde-zelda: #2e8b57; /* Verde escuro, similar ao traje de Link */
+  --dourado-triforce: #daa520; /* Dourado, inspirado na Triforce */
+  --dourado-escuro: #5c6506; /* dourado-escuro, como o de Hyrule Castle */
+  --marrom-deku: #8b4513; /* Marrom, para elementos relacionados à natureza */
 }
 
 /* Estilizando o corpo da página */
 body {
-    font-family: Arial, sans-serif;
-    background-color: var(--marrom-deku); /* Fundo marrom natural */
-    color: #fff; /* Texto em branco */
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif; /* Fundo marrom natural */
+  color: #fff; /* Texto em branco */
+  margin: 0;
+  padding: 0;
+  background: rgb(22, 22, 22);
 }
 
 /* Cabeçalho da página */
 header {
-    background-color: var(--verde-zelda); /* Cabeçalho com fundo verde */
-    padding: 20px;
-    text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro com opacidade */
+  text-align: center;
+  padding: 2vh;
 }
 
-/* Estilo do título principal no cabeçalho */
-header h1 {
-    margin: 0;
-    color: var(--dourado-triforce); /* Título em dourado */
-    font-size: 2.5em;
+#hyruleHerald {
+  max-width: 60vw;
+  height: auto;
 }
 
 /* Barra de navegação */
 nav {
-    background-color: var(--azul-royal); /* Fundo azul royal na barra de navegação */
-    padding: 10px;
-    text-align: center;
+  background-color: #343a40; /* Cor escura da navbar */
+  padding: 2vh 5vw;
+  display: flex;
+  justify-content: center;
+  gap: 5vw;
 }
 
 /* Links da barra de navegação */
+
 nav a {
-    color: #fff; /* Links em branco */
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 1.2em;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2vh;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #bdbd28; /* Cor de destaque ao passar o mouse */
 }
 
 /* Estilo principal do conteúdo */
 main {
-    padding: 20px;
+  padding: 20px;
+  background-color: gray;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  display: inline-block;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  justify-content: center;
 }
 
 /* Estilo dos artigos (notícias) */
 article {
-    background-color: var(--verde-zelda); /* Fundo verde dos artigos */
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 8px;
+  background-color: var(--verde-zelda); /* Fundo verde dos artigos */
+  padding: 2vh 2vw;
+  border-radius: 1vh;
+  box-shadow: 0 0 2vh rgba(0, 0, 0, 0.2); /* Adiciona sombra para destaque */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.articles {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+/* Configuração do container principal que envolve os blocos central e lateral */
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5vh 5vw;
+}
+
+/* Estilo do bloco central */
+.main-content {
+  flex: 3;
+  padding-right: 2vw;
+}
+
+/* Estilo do bloco lateral */
+.sidebar {
+  flex: 1;
+  background-color: #3a5a40;
+  padding: 2vh 2vw;
+  border-radius: 1vh;
+  color: #fff;
+}
+
+/* Estilo das notícias rápidas */
+.news-updates h3,
+.folhito-info h3 {
+  color: var(--dourado-triforce);
+  margin-bottom: 2vh;
+}
+
+.news-updates ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.news-updates li {
+  margin-bottom: 1.5vh;
+}
+
+/* Estilo para a imagem e descrição do Folhito */
+.folhito-info img {
+  width: 100%;
+  border-radius: 1vh;
+  margin-bottom: 2vh;
+}
+
+.folhito-info p {
+  font-size: 2vh;
+  line-height: 1.5;
+}
+
+/* Estilo dos artigos */
+.articles {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh; /* Espaçamento entre os artigos */
 }
 
 /* Título dos artigos */
 article h2 {
-    color: var(--dourado-triforce); /* Títulos dos artigos em dourado */
+  color: var(--dourado-triforce);
+  margin-bottom: 2vh;
+  text-align: center; /* Títulos dos artigos em dourado */
 }
-
+article p {
+  font-size: 2vh;
+  text-align: justify;
+}
+article:hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
 /* Estilo do rodapé */
 footer {
-    background-color: var(--azul-royal); /* Fundo azul royal do rodapé */
-    padding: 10px;
-    text-align: center;
-    color: #fff; /* Texto do rodapé em branco */
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+  padding: 2vh;
+  bottom: 0;
+  width: 100%;
 }
 
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
 
-#logo {
-    background: url(../img/hyrule.jpg);
+  .content-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    margin-top: 4vh;
+  }
 }

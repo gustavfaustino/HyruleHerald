@@ -1,61 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Hyrulean Herald - Portal de Notícias de Hyrule</title>
-    <link rel="stylesheet" href="css/estiloPrincipal.css">
-    <!-- Início do CSS -->
-  
-</head>
-<body>
-
+    <link rel="stylesheet" href="css/estiloPrincipal.css" />
+  </head>
+  <body>
     <!-- Início do cabeçalho -->
-    <header id="logo">
-        <!-- Título do portal -->
-        <h1>The Hyrulean Herald</h1>
+    <header>
+      <a href="https://www.fontspace.com/category/zelda"
+        ><img
+          id="hyruleHerald"
+          src="https://see.fontimg.com/api/rf5/y07d/ZTRhZWIzMmRlNWZhNGU2ZWJkNzdiMjEzNDM2N2ExYzAudHRm/VGhlIEh5cnVsZSBIZXJhbGQ/triforce.png?r=fs&h=80&w=1250&fg=BEBD28&bg=FFFFFF&tb=1&s=64"
+          alt="Zelda fonts"
+      /></a>
     </header>
     <!-- Fim do cabeçalho -->
 
     <!-- Início da barra de navegação -->
     <nav>
-        <!-- Links para as seções do portal -->
-        <a href="#">Início</a>
-        <a href="#">Notícias</a>
-        <a href="#">Explorações</a>
-        <a href="#">Relíquias</a>
-        <a href="#">Contato</a>
+      <!-- Links para as seções do portal -->
+      <a href="#">Início</a>
+      <a href="#">Notícias</a>
+      <a href="#">Explorações</a>
+      <a href="#">Relíquias</a>
+      <a href="#">Sobre</a>
     </nav>
     <!-- Fim da barra de navegação -->
 
-    <!-- Início do conteúdo principal -->
-    <main>
-        <!-- Artigo de exemplo 1 -->
-        <article>
-            <h2>Novo Recorde no Templo da Água</h2>
-            <p>Link superou todas as expectativas ao derrotar Morpha em tempo recorde. Veja como ele dominou as águas traiçoeiras do Templo da Água.</p>
-        </article>
+    <!-- Container principal que vai envolver os dois blocos (central e lateral) -->
+    <div class="content-container">
+      <!-- Início do conteúdo principal -->
+      <!-- Bloco Central  -->
+      <div class="main-content">
+        <!-- Mantenha seus artigos e conteúdo principal aqui -->
+        <main>
+          <div class="articles">
+            <!-- Artigo de exemplo 1 -->
+            <article>
+              <img
+                src="img/OoT_Water_Temple.webp"
+                width="100%"
+                alt="Templo da Água"
+              />
+              <h2>Novo Recorde no Templo da Água</h2>
+              <p>
+                Link superou todas as expectativas ao derrotar Morpha em tempo
+                recorde. Veja como ele dominou as águas traiçoeiras do Templo da
+                Água.
+              </p>
+            </article>
 
-        <!-- Artigo de exemplo 2 -->
-        <article>
-            <h2>Transformações em Hyrule</h2>
-            <p>Após a queda de Ganon, Hyrule enfrenta novas mudanças. Descubra os novos caminhos e desafios que surgiram no reino.</p>
-        </article>
+            <!-- Artigo de exemplo 2 -->
+            <article>
+              <img
+                src="img/churchOOT.png"
+                width="100%"
+                alt="Igreja em Hyrule Town"
+              />
+              <h2>Transformações em Hyrule</h2>
+              <p>
+                Após a queda de Ganon, Hyrule enfrenta novas mudanças. Descubra
+                os novos caminhos e desafios que surgiram no reino.
+              </p>
+            </article>
 
-        <!-- Artigo de exemplo 3 -->
-        <article>
-            <h2>Feira de Lon Lon Ranch</h2>
-            <p>A Feira Anual está de volta! Não perca as melhores ofertas de poções e itens raros para a sua jornada.</p>
-        </article>
-    </main>
-    <!-- Fim do conteúdo principal -->
+            <!-- Artigo de exemplo 3 -->
+            <article>
+              <img src="img/LonLon.jpg" width="100%" alt="Rancho LonLon" />
+              <h2>Feira de Lon Lon Ranch</h2>
+              <p>
+                A Feira Anual está de volta! Não perca as melhores ofertas de
+                poções e itens raros para a sua jornada.
+              </p>
+            </article>
+          </div>
+        </main>
+        <!-- Fim do conteúdo principal -->
+      </div>
+
+      <!-- Bloco Lateral Direito -->
+      <aside class="sidebar">
+        <!-- Breves informações sobre notícias novas -->
+        <div class="news-updates">
+          <h3>Últimas Notícias</h3>
+          <ul>
+            <li>Link explora novas cavernas em Hyrule</li>
+            <li>Feira de Lon Lon Ranch abre com descontos</li>
+            <li>Novas armas descobertas no Vale Gerudo</li>
+          </ul>
+        </div>
+
+        <!-- Bloco com a imagem e descrição do Folhito -->
+        <div class="folhito-info">
+          <h3>Conheça Folhito</h3>
+          <img src="img/folhito.jpg" alt="Imagem de Folhito" />
+          <p>
+            Folhito é o Deku Scrub mais curioso de Hyrule, sempre trazendo as
+            últimas notícias!
+          </p>
+        </div>
+      </aside>
+    </div>
 
     <!-- Início do rodapé -->
     <footer>
-        <!-- Texto do rodapé -->
-        <p>&copy; 2024 The Hyrulean Herald - Todos os direitos reservados.</p>
+      <!-- Texto do rodapé -->
+      <p>&copy; 2024 The Hyrulean Herald - Todos os direitos reservados.</p>
     </footer>
     <!-- Fim do rodapé -->
-
-</body>
+  </body>
 </html>
