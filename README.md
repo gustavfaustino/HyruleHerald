@@ -1,6 +1,9 @@
-<h1 align="center">Portal Multiverso GEEK</h1> 
+# HyruleHerald
+## Descrição do Projeto
 
+HyruleHerald é um portal de notícias fictício ambientado no mundo de The Legend of Zelda. Criado especialmente para fãs da série, o site oferece as últimas atualizações sobre os eventos e transformações no reino de Hyrule, como explorações, descobertas de relíquias e mudanças após as batalhas contra Ganon. O projeto foi desenvolvido utilizando HTML, CSS e Flexbox, com um design responsivo que proporciona uma experiência imersiva tanto em dispositivos móveis quanto em desktops.
+###
 
-O Portal Geek Multiverso é um projeto criado para o curso da PROA, com o objetivo de desenvolver uma plataforma online voltada para a cultura geek. Este portal servirá como um espaço para notícias, artigos e informações sobre filmes, séries, quadrinhos, games e tecnologia, proporcionando um ambiente digital para entusiastas do universo nerd.
+## Origem
 
-O projeto foi pensado para oferecer uma navegação intuitiva e acessível, garantindo uma experiência agradável para todos os usuários. Com uma interface moderna, o Portal Geek Multiverso busca se tornar um ponto de encontro para fãs do mundo geek, celebrando o que há de melhor nesse universo.
+Este projeto foi desenvolvido como parte das atividades do curso de programação do Instituto PROA.
