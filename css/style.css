@@ -1,0 +1,100 @@
+@font-face {
+  font-family: Hylia Serif;
+  src: url(../css/font/Triforce.ttf);
+}
+
+/* Estilos básicos e temáticos */
+body {
+  font-family: 'Hylia Serif', serif; 
+  background-image: url(../img/463509.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  color: #ffffff; 
+}
+
+.bg-dark {
+  background-color: #38574c !important; 
+}
+
+.nav-link {
+  color: #d9b382 !important; 
+}
+
+.nav-link:hover {
+  color: #fff !important; 
+}
+
+/* Cabeçalho fixo */
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030; 
+}
+
+/* Banner em tela cheia */
+.banner {
+  min-height: 500px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white; 
+}
+
+.banner-content {
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.banner h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+
+/* Estilos para as notícias */
+.noticia {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #045a04;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.noticia img {
+  margin-bottom: 10px;
+}
+
+/* Estilos para os destaques */
+aside h3 {
+  border-bottom: 2px solid #38574c; 
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside li {
+  margin-bottom: 10px;
+}
+
+aside a {
+  color: #d9b382;
+  text-decoration: none;
+}
+
+aside a:hover {
+  text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+  background-color: #38574c; 
+}

@@ -1,114 +1,155 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Hyrulean Herald - Portal de Notícias de Hyrule</title>
-    <link rel="stylesheet" href="css/estiloPrincipal.css" />
+    <title>The Hyrule Herald</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="/img/icon.png" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Início do cabeçalho -->
-    <header>
-      <a href="https://www.fontspace.com/category/zelda"
-        ><img
-          id="hyruleHerald"
-          src="https://see.fontimg.com/api/rf5/y07d/ZTRhZWIzMmRlNWZhNGU2ZWJkNzdiMjEzNDM2N2ExYzAudHRm/VGhlIEh5cnVsZSBIZXJhbGQ/triforce.png?r=fs&h=80&w=1250&fg=BEBD28&bg=FFFFFF&tb=1&s=64"
-          alt="Zelda fonts"
-      /></a>
+    <header class="container-fluid fixed-top bg-dark text-light p-3">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a href="#" class="navbar-brand">
+          <img
+            src="img/text-1725246663085.png"
+            alt="Logo The Hyrule Herald"
+            width="200"
+          />
+        </a>
+        <nav>
+          <ul class="nav d-flex" id="menu">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Curiosidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">História de Hyrule</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <!-- Fim do cabeçalho -->
 
-    <!-- Início da barra de navegação -->
-    <nav>
-      <!-- Links para as seções do portal -->
-      <a href="#">Início</a>
-      <a href="#">Notícias</a>
-      <a href="#">Explorações</a>
-      <a href="#">Relíquias</a>
-      <a href="#">Sobre</a>
-    </nav>
-    <!-- Fim da barra de navegação -->
+    <main>
+      <section class="banner">
+        <div class="container">
+          <div class="banner-content text-center">
+            <h1>Bem-vindo a Hyrule Herald</h1>
+            <p class="lead">O seu portal de notícias sobre o mundo de Zelda</p>
+          </div>
+        </div>
+      </section>
 
-    <!-- Container principal que vai envolver os dois blocos (central e lateral) -->
-    <div class="content-container">
-      <!-- Início do conteúdo principal -->
-      <!-- Bloco Central  -->
-      <div class="main-content">
-        <!-- Mantenha seus artigos e conteúdo principal aqui -->
-        <main>
-          <div class="articles">
-            <!-- Artigo de exemplo 1 -->
-            <article>
-              <img
-                src="img/OoT_Water_Temple.webp"
-                width="100%"
-                alt="Templo da Água"
-              />
-              <h2>Novo Recorde no Templo da Água</h2>
-              <p>
-                Link superou todas as expectativas ao derrotar Morpha em tempo
-                recorde. Veja como ele dominou as águas traiçoeiras do Templo da
-                Água.
-              </p>
+      <section class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h2 class="mb-3">Últimas Notícias</h2>
+
+            <article class="noticia row mb-4">
+              <div class="col-md-4">
+                <img
+                  src="img/Link_Master_Sword.avif"
+                  alt="Link empunhando a Master Sword"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-md-8">
+                <h3>Herói da Hora: Link Derrota Ganondorf!</h3>
+                <p>
+                  Após uma batalha épica, o jovem herói Link triunfou sobre o
+                  maligno Ganondorf, salvando Hyrule da escuridão. Leia mais
+                  sobre essa incrível aventura!
+                </p>
+                <a href="#" class="btn btn-warning">Ler mais</a>
+              </div>
             </article>
 
-            <!-- Artigo de exemplo 2 -->
-            <article>
-              <img
-                src="img/churchOOT.png"
-                width="100%"
-                alt="Igreja em Hyrule Town"
-              />
-              <h2>Transformações em Hyrule</h2>
-              <p>
-                Após a queda de Ganon, Hyrule enfrenta novas mudanças. Descubra
-                os novos caminhos e desafios que surgiram no reino.
-              </p>
+            <article class="noticia row mb-4">
+              <div class="col-md-4">
+                <img
+                  src="img/Princess-Zelda-Ocarina-of-Time-featured-image.jpg"
+                  alt="Princesa Zelda tocando a Ocarina do Tempo"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-md-8">
+                <h3>A Princesa Zelda e a Profecia</h3>
+                <p>
+                  Descubra os segredos da profecia que envolve a Princesa Zelda
+                  e sua ligação com a Triforce *. Uma história emocionante que
+                  você não pode perder!
+                </p>
+                <a href="#" class="btn btn-warning">Ler mais</a>
+              </div>
             </article>
-
-            <!-- Artigo de exemplo 3 -->
-            <article>
-              <img src="img/LonLon.jpg" width="100%" alt="Rancho LonLon" />
-              <h2>Feira de Lon Lon Ranch</h2>
-              <p>
-                A Feira Anual está de volta! Não perca as melhores ofertas de
-                poções e itens raros para a sua jornada.
-              </p>
+            <article class="noticia row mb-4">
+              <div class="col-md-4">
+                <img
+                  src="img/Goron-City.jpg"
+                  alt="Cidade dos Gorons em Hyrule"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-md-8">
+                <h3>
+                  A Revolução dos Gorons: Novo Chefe Eleito na Montanha da Morte
+                </h3>
+                <p>
+                  Em uma decisão histórica, os Gorons de Hyrule elegeram Darunia
+                  Jr. como o novo Chefe da Cidade Goron. Veja como essa eleição
+                  pode impactar toda Hyrule!
+                </p>
+                <a href="#" class="btn btn-warning">Ler mais</a>
+              </div>
             </article>
           </div>
-        </main>
-        <!-- Fim do conteúdo principal -->
+          <div class="col-md-4">
+            <aside>
+              <h3>Destaques</h3>
+              <ul>
+                <li><a href="#">Entrevista Exclusiva com a Sheikah Impa</a></li>
+                <li><a href="#">Os Segredos da Master Sword Revelados</a></li>
+                <li><a href="#">Guia Completo das Masmorras de Hyrule</a></li>
+              </ul>
+
+              <div class="mt-4">
+                <h3>Folhito Recomenda</h3>
+                <div class="card mb-3">
+                  <img
+                    src="img/Triforce_(Ocarina_of_Time).webp"
+                    class="card-img-top"
+                    alt="Descrição da imagem da recomendação"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Saiba mais sobre a Triforce</h5>
+                    <p class="card-text">
+                      Descubra quando e como surgiu esse artefato mágico!
+                    </p>
+                    <a href="#" class="btn btn-secondary">Saiba mais</a>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container-fluid bg-dark text-light py-3 mt-5">
+      <div class="container text-center">
+        <p>&copy; Todos os direitos reservados para o Folhito !</p>
       </div>
-
-      <!-- Bloco Lateral Direito -->
-      <aside class="sidebar">
-        <!-- Breves informações sobre notícias novas -->
-        <div class="news-updates">
-          <h3>Últimas Notícias</h3>
-          <ul>
-            <li>Link explora novas cavernas em Hyrule</li>
-            <li>Feira de Lon Lon Ranch abre com descontos</li>
-            <li>Novas armas descobertas no Vale Gerudo</li>
-          </ul>
-        </div>
-
-        <!-- Bloco com a imagem e descrição do Folhito -->
-        <div class="folhito-info">
-          <h3>Conheça Folhito</h3>
-          <img src="img/folhito.jpg" alt="Imagem de Folhito" />
-          <p>
-            Folhito é o Deku Scrub mais curioso de Hyrule, sempre trazendo as
-            últimas notícias!
-          </p>
-        </div>
-      </aside>
-    </div>
-
-    <!-- Início do rodapé -->
-    <footer>
-      <!-- Texto do rodapé -->
-      <p>&copy; 2024 The Hyrulean Herald - Todos os direitos reservados.</p>
     </footer>
-    <!-- Fim do rodapé -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
