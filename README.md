@@ -19,7 +19,7 @@
     </p>
   </div>
   <div style="margin-left: 20px;">
-    <img src="img/Logo_b.png" alt="Logo do HyruleHerald" width="150px" />
+    <img src="img/Logo_melhor.png" alt="Logo do HyruleHerald" width="150px" />
   </div>
   
 </div>
