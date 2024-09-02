@@ -1,4 +1,4 @@
-<img src="img/text-1725246663085.png">
+<img src="img/text-1725246663085.png" alt="Logotipo do Hyrule Herald">
 
 <div style="display: flex; align-items: center; justify-content: space-between;">
   <div style="flex: 1;">
